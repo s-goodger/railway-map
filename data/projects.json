@@ -1,0 +1,672 @@
+{
+  "generatedFrom": "js/network.js",
+  "checked": "October 2026",
+  "conservativeSlipYears": 4,
+  "projects": [
+    {
+      "id": "spain-limits",
+      "name": "End of 2026 Spanish high-speed speed limits",
+      "officialTarget": "Limits announced until end of 2026",
+      "officialYearUsed": 2027,
+      "scenarioOfficial": [
+        2030
+      ],
+      "scenarioConservative": [
+        2035
+      ],
+      "description": "Temporary Adif speed restrictions imposed after the January 2026 Adamuz accident add ~30 min to Madrid–Barcelona and ~15 min to Madrid–Valencia.",
+      "status": "Restrictions extended to the end of 2026; normal running assumed from 2027.",
+      "officialPage": "https://en.ara.cat/politics/the-25-minute-increase-in-travel-time-between-madrid-and-barcelona-will-be-extended-until-the-end-of-the-year_1_5639216.html",
+      "dateSource": null,
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "deutschlandtakt",
+      "name": "Deutschlandtakt (stages to 2030 and 2035)",
+      "officialTarget": "Staged; next stage 2030 (not a completion date)",
+      "officialYearUsed": 2030,
+      "scenarioOfficial": [
+        2030,
+        2035
+      ],
+      "scenarioConservative": [
+        2035,
+        2040
+      ],
+      "description": "Germany's integrated national clock-face timetable, delivered through staged infrastructure upgrades. Modelled as −5% on German links by 2030 and a further −3% by 2035.",
+      "status": "Official FAQ: 2030 is a stage, not a completion date; target timetable being revised against the 2040 forecast.",
+      "officialPage": "https://www.deutschlandtakt.de/",
+      "dateSource": "https://www.deutschlandtakt.de/faqs/",
+      "rneCapacityStrategy": {
+        "text": "Named only as the \"guiding political principle\"; no dates or figures. The generic speed-up used here may partly overlap named German projects.",
+        "url": "https://rne.eu/wp-content/uploads/Draft-_Common-Capacity-Strategy-TT-2030.pdf"
+      },
+      "checked": "October 2026"
+    },
+    {
+      "id": "deutschlandtakt-full",
+      "name": "Deutschlandtakt (full target network)",
+      "officialTarget": "Target network aligned to the 2040 forecast",
+      "officialYearUsed": 2040,
+      "scenarioOfficial": [
+        2040
+      ],
+      "scenarioConservative": [
+        null
+      ],
+      "description": "Full target network including new lines on bottleneck corridors. Modelled as a further −4% on German links.",
+      "status": "No official completion year.",
+      "officialPage": "https://www.deutschlandtakt.de/",
+      "dateSource": "https://www.deutschlandtakt.de/faqs/",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "stuttgart21",
+      "name": "Stuttgart 21",
+      "officialTarget": "Main station Dec 2031 (staged Dec 2027–2033)",
+      "officialYearUsed": 2031,
+      "scenarioOfficial": [
+        2035
+      ],
+      "scenarioConservative": [
+        2035
+      ],
+      "description": "New underground through-station and approach tunnels, fully exploiting the Wendlingen–Ulm line. Stated saving ~15 min for through trains (e.g. Stuttgart–Munich, Paris–Munich).",
+      "status": "DB reset (June 2026): December 2026 dropped; airport station Dec 2030, main station Dec 2031, final stages to 2033.",
+      "officialPage": "https://www.bahnprojekt-stuttgart-ulm.de/projekt-en",
+      "dateSource": "https://www.deutschebahn.com/de/presse/pressestart_zentrales_uebersicht/Stuttgart-21-Deutsche-Bahn-stellt-Inbetriebnahmeplan-neu-auf--13956556",
+      "rneCapacityStrategy": {
+        "text": "States \"Travel time reduction approx. 15 min\" (used here). Its Dec 2026 date is superseded; the TT2030 draft no longer lists S21 before TT2030, consistent with Dec 2031.",
+        "url": "https://rne.eu/wp-content/uploads/Common-pilot-Capacity-Strategy-TT-2029-1.pdf"
+      },
+      "checked": "October 2026"
+    },
+    {
+      "id": "rastatt",
+      "name": "Karlsruhe–Offenburg new line: Rastatt section",
+      "officialTarget": "TT2027 (December 2026)",
+      "officialYearUsed": 2027,
+      "scenarioOfficial": [
+        2030
+      ],
+      "scenarioConservative": [
+        2035
+      ],
+      "description": "Continuous four tracks between Karlsruhe and Offenburg with 250 km/h running through the Rastatt tunnel; ~3 min saved on Rhine Valley long-distance services (Frankfurt/Karlsruhe–Basel, Strasbourg/Paris–Stuttgart/Munich).",
+      "status": "Listed for TT2027 (Dec 2026) in the RNE Common Capacity Strategy TT2030; not yet reflected in the Oct–Nov 2026 timetable samples used for the 2026 baseline, so it counts from 2030.",
+      "officialPage": "https://www.karlsruhe-basel.de/",
+      "dateSource": "https://rne.eu/wp-content/uploads/Draft-_Common-Capacity-Strategy-TT-2030.pdf",
+      "rneCapacityStrategy": {
+        "text": "States \"approx. 3 min in long distance traffic\"; 250 km/h; TT2027.",
+        "url": "https://rne.eu/wp-content/uploads/Common-pilot-Capacity-Strategy-TT-2029-1.pdf"
+      },
+      "checked": "October 2026"
+    },
+    {
+      "id": "lyon-turin",
+      "name": "Lyon–Turin base tunnel",
+      "officialTarget": "End of 2033",
+      "officialYearUsed": 2033,
+      "scenarioOfficial": [
+        2035
+      ],
+      "scenarioConservative": [
+        2040
+      ],
+      "description": "57.5 km base tunnel under the Alps; Lyon–Turin ~1h55 and Paris–Milan ~4h with full access lines.",
+      "status": "About 30% complete; 49.8 of 164 km of tunnels dug (Oct 2026). Date fixed in the EU implementing decision (July 2025).",
+      "officialPage": "https://www.telt.eu/en/project/understand-the-lyon-turin-project",
+      "dateSource": "https://www.telt.eu/en/highlight/telt-replies-to-the-2025-eu-court-of-auditors-report",
+      "rneCapacityStrategy": {
+        "text": "Lists the base tunnel as \"Phase 4 beyond 2030\"; the existing Fréjus line has tunnel-maintenance closures 2026–2030.",
+        "url": "https://rne.eu/wp-content/uploads/Draft-_Common-Capacity-Strategy-TT-2030.pdf"
+      },
+      "checked": "October 2026"
+    },
+    {
+      "id": "brenner",
+      "name": "Brenner Base Tunnel",
+      "officialTarget": "2034 (delay announced 20 Oct 2026)",
+      "officialYearUsed": 2034,
+      "scenarioOfficial": [
+        2035
+      ],
+      "scenarioConservative": [
+        2040
+      ],
+      "description": "55 km tunnel Innsbruck–Fortezza; cuts ~1 hour from Munich–Verona.",
+      "status": "New delay announced 20 October 2026 (was 2032): works finish 2033, then a year of commissioning; cost ~€11.7bn.",
+      "officialPage": "https://www.bbt-se.com/en/brenner-base-tunnel/project-overview/",
+      "dateSource": "https://www.bbt-se.com/newsroom/detail/vom-tunnel-zum-bahnsystem-neuplanung-staerkt-sicherheit-des-infrastrukturprojekts-und-bringt-anpassung-von-bauzeiten-und-kosten/",
+      "rneCapacityStrategy": {
+        "text": "No opening date given; the southern access Fortezza–Ponte Gardena is listed for 2029 (\"reducing travel time\", no figure).",
+        "url": "https://rne.eu/wp-content/uploads/Draft-_Common-Capacity-Strategy-TT-2030.pdf"
+      },
+      "checked": "October 2026"
+    },
+    {
+      "id": "semmering",
+      "name": "Semmering Base Tunnel",
+      "officialTarget": "End of 2029",
+      "officialYearUsed": 2029,
+      "scenarioOfficial": [
+        2030
+      ],
+      "scenarioConservative": [
+        2035
+      ],
+      "description": "27 km tunnel on Austria's Southern Railway. ÖBB states Vienna–Graz in under 2 hours (now 2h26) and Vienna–Klagenfurt 2h45 (now 3h10), i.e. ~25 min off journeys south of Vienna (Venice, Ljubljana, Zagreb).",
+      "status": "Excavation finished 2024; rail systems being fitted.",
+      "officialPage": "https://infrastruktur.oebb.at/en/projects-for-austria/railway-lines/southern-line-vienna-villach/semmering-base-tunnel",
+      "dateSource": "https://infrastruktur.oebb.at/en/projects-for-austria/railway-lines/southern-line-vienna-villach/semmering-base-tunnel",
+      "rneCapacityStrategy": {
+        "text": "Confirms Dec 2029 and \"reduction in journey time\" (no figure).",
+        "url": "https://rne.eu/wp-content/uploads/Draft-_Common-Capacity-Strategy-TT-2030.pdf"
+      },
+      "checked": "October 2026"
+    },
+    {
+      "id": "fehmarn",
+      "name": "Fehmarn Belt fixed link",
+      "officialTarget": "No official year; road ≥2031, rail later (≥2032)",
+      "officialYearUsed": 2032,
+      "scenarioOfficial": [
+        2035
+      ],
+      "scenarioConservative": [
+        2040
+      ],
+      "description": "18 km immersed tunnel Denmark–Germany; Hamburg–Copenhagen ~2h30.",
+      "status": "Two-stage opening announced 17 May 2026: road first, rail once German land works are ready (at least 2032). New schedule due after first elements are sunk.",
+      "officialPage": "https://femern.com/the-tunnel/fehmarnbelt-tunnel/",
+      "dateSource": "https://femern.com/press/news/the-fehmarnbelt-tunnel-will-open-in-two-stages/",
+      "rneCapacityStrategy": {
+        "text": "Banedanmark plans the Danish landside line (Ringsted–Rødby) ready in 2029; through rail service still depends on the tunnel and German works (≥2032, kept).",
+        "url": "https://rne.eu/wp-content/uploads/Banedanmarks-Capacity-Strategy-TT30_Draft_Version-1_English-Version.pdf"
+      },
+      "checked": "October 2026"
+    },
+    {
+      "id": "cpk",
+      "name": "CPK high-speed rail (Warsaw–Łódź and extensions)",
+      "officialTarget": "2032 (Warsaw–Łódź); Poznań/Wrocław ~2035",
+      "officialYearUsed": 2032,
+      "scenarioOfficial": [
+        2035
+      ],
+      "scenarioConservative": [
+        2040
+      ],
+      "description": "Poland's \"Y\" high-speed line via the new airport. Stated times: Warsaw–Łódź 40 min (2032); Warsaw–Poznań and Warsaw–Wrocław ~1h40, Łódź–Poznań and Łódź–Wrocław ~1h (2035).",
+      "status": "Stage 1 Warsaw–airport–Łódź 2032; extension to Poznań and Wrocław 2035. Tenders for line sections under way.",
+      "officialPage": "https://portpolska.pl/en/project-status",
+      "dateSource": "https://zsk.gov.pl/en/benefits/transport-corridors/y-line/",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "montpellier-perpignan",
+      "name": "Montpellier–Perpignan new line (LNMP)",
+      "officialTarget": "Phase 1 Montpellier–Béziers 2034; phase 2 ~2040",
+      "officialYearUsed": 2034,
+      "scenarioOfficial": [
+        2035,
+        2040
+      ],
+      "scenarioConservative": [
+        2040,
+        null
+      ],
+      "description": "Missing high-speed link between France and Spain. Phase 1 saves ~20 min, phase 2 a further ~40 min on Paris/Lyon/Marseille–Barcelona.",
+      "status": "Steering committee of 3 July 2026 confirmed works start by end of 2029; phase 2 date \"being consolidated\".",
+      "officialPage": "https://www.ligne-montpellier-perpignan.com/",
+      "dateSource": "https://www.ligne-montpellier-perpignan.com/",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "rail-baltica",
+      "name": "Rail Baltica",
+      "officialTarget": "Phase 1 (single track) 2030; Polish section to Warsaw undated",
+      "officialYearUsed": 2030,
+      "scenarioOfficial": [
+        2030,
+        2035
+      ],
+      "scenarioConservative": [
+        2035,
+        2040
+      ],
+      "description": "New standard-gauge line Tallinn–Riga–Kaunas/Vilnius–Polish border. Stated times: Tallinn–Riga 1h42, Riga–Vilnius 1h54, Riga–Kaunas ~1h32, Vilnius–Kaunas 38 min; Vilnius–Kaunas–Warsaw 3h52 once the Polish section is done.",
+      "status": "EU milestone: single-track electrified line Tallinn–LT/PL border by 2030 (RB Rail CEO calls this demanding). Polish Ełk–border section still in design.",
+      "officialPage": "https://www.railbaltica.org/about-rail-baltica/",
+      "dateSource": "https://www.railbaltica.org/news/european-commission-adopts-milestones-for-the-completion-of-rail-baltica/",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "napoli-bari",
+      "name": "Naples–Bari high-speed/high-capacity line",
+      "officialTarget": "2030 (last sections)",
+      "officialYearUsed": 2030,
+      "scenarioOfficial": [
+        2030
+      ],
+      "scenarioConservative": [
+        2035
+      ],
+      "description": "Naples–Bari ~2h, Rome–Bari ~3h.",
+      "status": "Naples–Cancello open; Telese–Vitulano and Orsara–Bovino 2028; Apice–Hirpinia and Hirpinia–Orsara 2030.",
+      "officialPage": "https://www.fsitaliane.it/it/opere-strategiche/napoli---bari.html",
+      "dateSource": "https://www.fsitaliane.it/it/opere-strategiche/napoli---bari.html",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "y-vasca",
+      "name": "Basque Y high-speed network",
+      "officialTarget": "No official date (estimate)",
+      "officialYearUsed": 2030,
+      "scenarioOfficial": [
+        2030
+      ],
+      "scenarioConservative": [
+        2035
+      ],
+      "description": "High-speed triangle Bilbao–Vitoria–San Sebastián linking to Irun; Bilbao–San Sebastián ~50 min.",
+      "status": "March 2026: track bed to be finished \"in less than a year\"; officials avoid giving dates. 2030 is this tool's estimate.",
+      "officialPage": "https://www.ets-rfv.euskadi.eus/la-y-vasca/",
+      "dateSource": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transportes-movilidad-sostenible/Paginas/2026/060326-puente-movilidad-euskadi.aspx",
+      "rneCapacityStrategy": {
+        "text": "Not mentioned by ADIF; SNCF Réseau lists a double standard-gauge track Hendaye–Irun for 2029.",
+        "url": "https://rne.eu/wp-content/uploads/2028-Capacity-Strategy-Mature-Draft-SNCF-R-EN.pdf"
+      },
+      "checked": "October 2026"
+    },
+    {
+      "id": "ostlanken",
+      "name": "Ostlänken (East Link)",
+      "officialTarget": "About 2035",
+      "officialYearUsed": 2035,
+      "scenarioOfficial": [
+        2035
+      ],
+      "scenarioConservative": [
+        2040
+      ],
+      "description": "New high-speed line Järna–Linköping (Torvinge); saves ~35 min on Stockholm–Copenhagen.",
+      "status": "Under the 2026–2037 national plan the line ends at Torvinge, east of Linköping.",
+      "officialPage": "https://www.trafikverket.se/ostlanken",
+      "dateSource": "https://www.trafikverket.se/ostlanken",
+      "rneCapacityStrategy": {
+        "text": "Trafikverket gives no opening date; only Norrköping C station works 2030–2036.",
+        "url": "https://rne.eu/wp-content/uploads/trafikverkets_capacity_strategy_2030_draft.pdf"
+      },
+      "checked": "October 2026"
+    },
+    {
+      "id": "hs2",
+      "name": "HS2 Phase 1 (London–Birmingham)",
+      "officialTarget": "May 2036 – Oct 2039 (Old Oak Common–Birmingham)",
+      "officialYearUsed": 2039,
+      "scenarioOfficial": [
+        2040
+      ],
+      "scenarioConservative": [
+        null
+      ],
+      "description": "New line London–Birmingham. HS2 states Old Oak Common–Birmingham Curzon Street ~42–45 min and Euston–Curzon Street 49 min (now 1h17–1h19). Modelled from 2039 as 55 min to central London (Old Oak + Elizabeth line). Manchester/Scotland trains only gain once Euston and the Handsacre link open (2040–2043, beyond this tool's horizon).",
+      "status": "Reset of 19 May 2026: first services Old Oak Common–Birmingham May 2036–Oct 2039; Euston and full scheme 2040–2043; top speed cut to 320 km/h.",
+      "officialPage": "https://www.hs2.org.uk/hs2-project-update/",
+      "dateSource": "https://www.hs2.org.uk/why/connectivity/",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "brescia-verona",
+      "name": "Brescia–Verona high-speed line",
+      "officialTarget": "First half of 2027",
+      "officialYearUsed": 2027,
+      "scenarioOfficial": [
+        2030
+      ],
+      "scenarioConservative": [
+        2035
+      ],
+      "description": "Completes high speed from Milan to Verona; ~12 min saved.",
+      "status": "Slipped from February 2026; trial runs since June 2026.",
+      "officialPage": "https://www.fsitaliane.it/en/strategic-projects/brescia-verona-padua-hs-hc-line.html",
+      "dateSource": "https://www.fsitaliane.it/en/strategic-projects/brescia-verona-padua-hs-hc-line.html",
+      "rneCapacityStrategy": {
+        "text": "Dated 2027 (\"running times reduction\", no figure); the TT2029 edition said Dec 2026.",
+        "url": "https://rne.eu/wp-content/uploads/Draft-_Common-Capacity-Strategy-TT-2030.pdf"
+      },
+      "checked": "October 2026"
+    },
+    {
+      "id": "verona-padua",
+      "name": "Verona–Vicenza–Padua high-speed line",
+      "officialTarget": "Verona–Vicenza 2027; Vicenza crossing Sept 2033; Vicenza–Padua undated",
+      "officialYearUsed": 2033,
+      "scenarioOfficial": [
+        2035
+      ],
+      "scenarioConservative": [
+        2040
+      ],
+      "description": "Extends high speed towards Venice; Milan–Venice ~1h50 when complete.",
+      "status": "Lot 1 works finished (Aug 2026); lot 3 Vicenza–Padua only funded for final design.",
+      "officialPage": "https://www.fsitaliane.it/en/strategic-projects/brescia-verona-padua-hs-hc-line.html",
+      "dateSource": "https://www.fsitaliane.it/en/strategic-projects/brescia-verona-padua-hs-hc-line.html",
+      "rneCapacityStrategy": {
+        "text": "Dates the Verona–Vicenza section 2027, yet lists a line closure for the same works in 2029–2030; Vicenza–Padua not mentioned. 2033 kept.",
+        "url": "https://rne.eu/wp-content/uploads/Draft-_Common-Capacity-Strategy-TT-2030.pdf"
+      },
+      "checked": "October 2026"
+    },
+    {
+      "id": "med-corridor",
+      "name": "Mediterranean Corridor: Valencia–Castellón–Tarragona",
+      "officialTarget": "2027 (standard gauge Castellón–Tarragona)",
+      "officialYearUsed": 2027,
+      "scenarioOfficial": [
+        2030
+      ],
+      "scenarioConservative": [
+        2035
+      ],
+      "description": "Gauge conversion and upgrades; Barcelona–Valencia ~2h15.",
+      "status": "Closure dates for the gauge change still being set. No dedicated project page; link is an Adif press note.",
+      "officialPage": "https://www.adif.es/w/obras-implantacion-ancho-estandar-aldea-vinaros-les-palmes-benicassim-",
+      "dateSource": "https://www.transportes.gob.es/ministerio/comunicacion/sala-prensa/jue-20112025-1607",
+      "rneCapacityStrategy": {
+        "text": "ADIF confirms the Castellón–Tarragona gauge conversion but gives no date or journey time.",
+        "url": "https://rne.eu/wp-content/uploads/Capacity-Strategy-2030.pdf"
+      },
+      "checked": "October 2026"
+    },
+    {
+      "id": "gpso",
+      "name": "GPSO: Bordeaux–Toulouse high-speed line",
+      "officialTarget": "2032 (project target; ~2035 suggested by advisers)",
+      "officialYearUsed": 2032,
+      "scenarioOfficial": [
+        2035
+      ],
+      "scenarioConservative": [
+        2040
+      ],
+      "description": "New 222 km line. Stated: Bordeaux–Toulouse 1h05 (now 2h20) and Paris–Toulouse 3h10 (now 4h35).",
+      "status": "May 2026 State–local deal releases ~€500m for tenders; COI advisers call 2032/33 very hard to meet.",
+      "officialPage": "https://www.ln-so.fr/en",
+      "dateSource": "https://metropole.toulouse.fr/espace-presse/1ere-reunion-du-conseil-de-surveillance-du-gpso",
+      "rneCapacityStrategy": {
+        "text": "Speed-increase phases dated 2031 (Toulouse end) and TT2032; no time figure.",
+        "url": "https://rne.eu/wp-content/uploads/Draft-_Common-Capacity-Strategy-TT-2030.pdf"
+      },
+      "checked": "October 2026"
+    },
+    {
+      "id": "prague-brno",
+      "name": "Prague–Brno high-speed line",
+      "officialTarget": "About 2035 (indicative)",
+      "officialYearUsed": 2035,
+      "scenarioOfficial": [
+        2035
+      ],
+      "scenarioConservative": [
+        2040
+      ],
+      "description": "First Czech high-speed line. Správa železnic states Prague–Brno ~1h (now 2h36), so ~1h30 off every train via Brno (Prague–Vienna, –Bratislava, –Budapest, Berlin–Vienna).",
+      "status": "Construction from ~2030, 5–6 years to build (Správa železnic interview); the transport minister has said high-speed trains will come \"first in 2040\". No formal date.",
+      "officialPage": "https://vrtky.cz/useky-a-mapy/praha-brno-ostrava-a-brno-breclav",
+      "dateSource": "https://seznamzpravy.cz/clanek/ekonomika-byznys-rozhovory-rychlovlakem-z-prahy-do-brna-za-hodinu-kilometr-trate-vyjde-na-miliardu-237398",
+      "rneCapacityStrategy": {
+        "text": "Prague-end connection works (Běchovice–Libeň) run 10/2029–10/2035; no date or time for the line.",
+        "url": "https://rne.eu/wp-content/uploads/Draft-_Common-Capacity-Strategy-TT-2030.pdf"
+      },
+      "checked": "October 2026"
+    },
+    {
+      "id": "berlin-dresden",
+      "name": "Berlin–Dresden 200 km/h upgrade",
+      "officialTarget": "End of 2033 (Blankenfelde–Wünsdorf section)",
+      "officialYearUsed": 2033,
+      "scenarioOfficial": [
+        2035
+      ],
+      "scenarioConservative": [
+        2040
+      ],
+      "description": "Upgrade to 200 km/h. DB states Berlin–Dresden 80 min (fastest today ~94 min), ~14 min off all Berlin/Hamburg–Prague/Brno/Vienna/Bratislava trains.",
+      "status": "Total closure Apr 2028–Dec 2029 (RNE); last section delayed to end of 2033.",
+      "officialPage": "https://www.deutschebahn.com/de/bauprojekte/projekte_im_bau/ausbaustrecke-berlin-dresden",
+      "dateSource": "https://www.berliner-zeitung.de/article/db-ausbau-berlin-dresden-erst-bis-2033-10028383",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "plzen-domazlice",
+      "name": "Plzeň–Domažlice upgrade (Prague–Munich line)",
+      "officialTarget": "Plzeň–Stod section after total closure Jan 2028–Jun 2030",
+      "officialYearUsed": 2030,
+      "scenarioOfficial": [
+        2030
+      ],
+      "scenarioConservative": [
+        2035
+      ],
+      "description": "New 200 km/h alignment Plzeň–Stod; Správa železnic states Plzeň–Domažlice ~35 min instead of ~45.",
+      "status": "RNE Common Capacity Strategy TT2030 lists the Plzeň–Stod total closure Jan 2028–Jun 2030.",
+      "officialPage": "https://www.seznamzpravy.cz/clanek/vlaky-z-plzne-do-bavorska-pojedou-po-nove-trati-dve-ste-kilometru-v-hodine-126144",
+      "dateSource": "https://rne.eu/wp-content/uploads/Draft-_Common-Capacity-Strategy-TT-2030.pdf",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "dk-fyn",
+      "name": "Danish Funen upgrades: Vestfyn new line + Ringsted–Odense 200 km/h",
+      "officialTarget": "Vestfyn end 2029; 200 km/h 2028–2030",
+      "officialYearUsed": 2029,
+      "scenarioOfficial": [
+        2030
+      ],
+      "scenarioConservative": [
+        2035
+      ],
+      "description": "Danish Transport Ministry: Vestfyn new line ~6 min faster Odense–Jutland; 200 km/h Ringsted–Odense ~5 min faster. ~11 min off Copenhagen–Jutland (Hamburg–Copenhagen via Jutland until Fehmarn opens).",
+      "status": "Banedanmark capacity strategy TT2030: Vestfyn opens end of 2029; 180→200 km/h Ringsted–Slagelse, Nyborg–Odense 2028–2029.",
+      "officialPage": "https://www.trm.dk/media/nwkbufiz/faktaark-ny-bane-over-vestfynpdf.pdf",
+      "dateSource": "https://www.trm.dk/media/jezbiitd/faktaar-hastighedsopgradering-ringstedodense-final-a.pdf",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "hannover-berlin-works",
+      "name": "Hanover–Berlin line rebuild (closure Oct 2026–Dec 2027)",
+      "officialTarget": "Reopening Dec 2027",
+      "officialYearUsed": 2028,
+      "scenarioOfficial": [
+        2030
+      ],
+      "scenarioConservative": [
+        2035
+      ],
+      "description": "The Hanover–Berlin high-speed line is closed for general renovation, adding ~70 min to Hanover/Cologne/Amsterdam–Berlin trains. Normal running (Hanover–Berlin ~1h36, Cologne–Berlin ~4h20, Amsterdam–Berlin ~5h42) is assumed after reopening.",
+      "status": "Closure Oct 2026–Dec 2027 (RNE: Lehrte–Berlin general renovation 2027).",
+      "officialPage": "https://www.infranken.de/deutschland/berlin-hannover-80-minuten-mehr-fahrzeit-bis-ende-2027-art-6394443",
+      "dateSource": "https://rne.eu/wp-content/uploads/Common-pilot-Capacity-Strategy-TT-2029-1.pdf",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "fra-mannheim",
+      "name": "New line Frankfurt–Mannheim (NBS Rhein/Main–Rhein/Neckar)",
+      "officialTarget": "Full commissioning expected 2037",
+      "officialYearUsed": 2037,
+      "scenarioOfficial": [
+        2040
+      ],
+      "scenarioConservative": [
+        null
+      ],
+      "description": "New 300 km/h line; DB states Frankfurt–Mannheim 29 instead of 38 min, i.e. −9 min on trains from Frankfurt/Cologne/Hamburg/Paris towards Stuttgart, Basel and Zurich.",
+      "status": "Federal government report (July 2026): full commissioning expected 2037.",
+      "officialPage": "https://www.baden-wuerttemberg.de/de/service/presse/pressemitteilung/pid/neue-bahnstrecke-zwischen-frankfurt-und-mannheim",
+      "dateSource": "https://www.bundestag.de/presse/hib/kurzmeldungen-1200722",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "gaeubahn",
+      "name": "Gäubahn: Pfaffensteig tunnel (Stuttgart–Zurich)",
+      "officialTarget": "December 2033",
+      "officialYearUsed": 2033,
+      "scenarioOfficial": [
+        2035
+      ],
+      "scenarioConservative": [
+        2040
+      ],
+      "description": "New 11 km tunnel linking the Gäubahn to Stuttgart Airport and the S21 network; DB states ~15 min shorter Stuttgart–Zurich.",
+      "status": "Symbolic construction start 12 Oct 2026; opening Dec 2033 in the City of Stuttgart staging plan (June 2026).",
+      "officialPage": "https://www.stuttgart.de/service/aktuelle-meldungen/2026/juni/geaenderter-stufenplan-fuer-inbetriebnahme-ab-dezember-2027",
+      "dateSource": "https://www.wochenblatt-reporter.de/c-lokales/baustart-bei-stuttgart-tunnel-soll-zuerich-reisezeit-verkuerzen_a907499",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "budapest-belgrade",
+      "name": "Budapest–Belgrade railway",
+      "officialTarget": "Line complete 2026; full-speed service target ~2027",
+      "officialYearUsed": 2027,
+      "scenarioOfficial": [
+        2030
+      ],
+      "scenarioConservative": [
+        2035
+      ],
+      "description": "Rebuilt 160–200 km/h line. Hungarian government: Budapest–Kelebia 90 min; Serbian government: Belgrade–Budapest 2h40 (first through trains from Dec 2026 at 3h17).",
+      "status": "Hungarian section finished Jan 2026; freight since Feb 2026; passenger start slipped to 13 Dec 2026.",
+      "officialPage": "https://biznis.kurir.rs/info-biz/9925820/otvaranje-pruge-beograd-budimpesta",
+      "dateSource": "https://infostart.hu/belfold/2026/01/14/mar-tudni-mikor-indulhat-a-forgalom-a-budapest-belgrad-vasutvonalon",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "lnpca",
+      "name": "Ligne nouvelle Provence Côte d'Azur (phases 1–2)",
+      "officialTarget": "Phase 1 2029/2030; phase 2 (Marseille through station) from 2032",
+      "officialYearUsed": 2032,
+      "scenarioOfficial": [
+        2035
+      ],
+      "scenarioConservative": [
+        2040
+      ],
+      "description": "Underground through station at Marseille Saint-Charles; stated −20 min for trains crossing Marseille (e.g. Paris/Lyon–Nice TGVs, which today reverse there).",
+      "status": "Phases 3–4 (new Marseille–Toulon–Nice sections) around 2040, no stated times yet.",
+      "officialPage": "https://www.lignenouvelle-provencecotedazur.fr/foire-aux-questions-nos-reponses-aux-questions-frequentes",
+      "dateSource": "https://www.lignenouvelle-provencecotedazur.fr/foire-aux-questions-nos-reponses-aux-questions-frequentes",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "athens-thessaloniki",
+      "name": "Athens–Thessaloniki line restoration (OSE/ERGOSE)",
+      "officialTarget": "No firm year (estimate); new trains by end of 2027",
+      "officialYearUsed": 2028,
+      "scenarioOfficial": [
+        2030
+      ],
+      "scenarioConservative": [
+        2035
+      ],
+      "description": "ERGOSE states Athens–Thessaloniki will take 3 h once works are complete (5h12 in the 2026 works timetable; ~4h15 before 2023).",
+      "status": "Reconstruction after the 2023 Tempi accident continues through 2026; 2028 is this tool's estimate.",
+      "officialPage": "https://www.ergose.gr/2021/03/?lang=en",
+      "dateSource": "https://www.ethnos.gr/englishversion/amp/39962/athensthessalonikirailwayjourneywillbelessthan35hoursinafewdays",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "porto-vigo",
+      "name": "Porto–Vigo high-speed line (LAV Porto–Valença)",
+      "officialTarget": "Construction 2028–2033",
+      "officialYearUsed": 2033,
+      "scenarioOfficial": [
+        2035
+      ],
+      "scenarioConservative": [
+        2040
+      ],
+      "description": "IP: direct Porto–Vigo in 50 min (now ~2h30–3h30).",
+      "status": "Phase 1 tenders 2027; environmental assessments submitted mid-2026.",
+      "officialPage": "https://www.infraestruturasdeportugal.pt/pt-pt/rede-de-alta-velocidade",
+      "dateSource": "https://www.infraestruturasdeportugal.pt/pt-pt/rede-de-alta-velocidade",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "dresden-prague",
+      "name": "New line Dresden–Prague (Erzgebirge base tunnel)",
+      "officialTarget": "Opening end of 2044",
+      "officialYearUsed": 2044,
+      "scenarioOfficial": [
+        null
+      ],
+      "scenarioConservative": [
+        null
+      ],
+      "description": "BMV: Dresden–Prague from 2.5 h to 1 h. Beyond this tool's 2040 horizon.",
+      "status": "Bundestag approved further planning May 2026; construction from Dec 2032.",
+      "officialPage": "https://www.berliner-zeitung.de/article/bahnstrecke-dresdenprag-bundestag-gibt-gruenes-licht-fuer-milliardenprojekt-10037826",
+      "dateSource": "https://www.berliner-zeitung.de/article/bahnstrecke-dresdenprag-bundestag-gibt-gruenes-licht-fuer-milliardenprojekt-10037826",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    },
+    {
+      "id": "lisbon-madrid",
+      "name": "Lisbon–Madrid link (Évora–Elvas + Madrid–Extremadura HSL)",
+      "officialTarget": "Évora–Elvas end 2026/early 2027; Madrid–Lisbon direct \"by 2030\"; high speed 2034",
+      "officialYearUsed": 2027,
+      "scenarioOfficial": [
+        2030,
+        2035
+      ],
+      "scenarioConservative": [
+        2035,
+        2040
+      ],
+      "description": "Lisbon–Badajoz under 2h (Évora–Elvas), a direct Lisbon–Madrid train (~5h, 2030), then high speed (~3h, 2034).",
+      "status": "Évora–Elvas track complete (Jan 2026), signalling/certification pending. Madrid–Extremadura: Plasencia–Badajoz open since 2022, other sections in works or design.",
+      "officialPage": "https://www.infraestruturasdeportugal.pt/pt-pt/corredor-internacional-sul",
+      "dateSource": "https://eco.sapo.pt/2026/01/16/linha-evora-espanha-pronta-mas-comboios-so-no-final-do-ano/",
+      "rneCapacityStrategy": {
+        "text": "ADIF lists only the Mérida–Aljucén doubling (to 2030); no Badajoz–Elvas works, and 0 long-distance border paths/h planned.",
+        "url": "https://rne.eu/wp-content/uploads/Capacity-Strategy-2030.pdf"
+      },
+      "checked": "October 2026"
+    },
+    {
+      "id": "lisbon-porto",
+      "name": "Lisbon–Porto high-speed line",
+      "officialTarget": "~2033 for Porto–Carregado (1h19 non-stop); full 1h15 later",
+      "officialYearUsed": 2033,
+      "scenarioOfficial": [
+        2035
+      ],
+      "scenarioConservative": [
+        2040
+      ],
+      "description": "New high-speed line. IP: after phase 2 (~2033) a non-stop Porto–Lisbon train takes 1h19 (now 2h39); the headline 1h15 needs phase 3, with no date.",
+      "status": "Porto–Oiã under concession (July 2025); Oiã–Soure re-tendered Jan 2026; Carregado–Lisbon later.",
+      "officialPage": "https://www.infraestruturasdeportugal.pt/pt-pt/rede-de-alta-velocidade",
+      "dateSource": "https://portugal.gov.pt/pt/gc25/comunicacao/comunicados/alta-velocidade-porto-lisboa-lancamento-de-concurso-entre-oia-e-soure-afirma-compromisso-com-ferrovia",
+      "rneCapacityStrategy": null,
+      "checked": "October 2026"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sources &amp; projects — European Rail Travel Times</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/sources.css">
+  <script>try { if (localStorage.getItem('railmap-theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); } catch (e) {}</script>
+</head>
+<body class="sources-page">
+  <header class="src-header">
+    <div class="src-header-inner">
+      <a href="index.html" class="back-link">← Back to the map</a>
+      <h1>Sources &amp; projects</h1>
+      <p class="lede">Where every journey time and every future scenario in <em>European Rail Travel Times: Now vs Future</em> comes from, year by year.</p>
+      <nav class="year-nav" id="year-nav" aria-label="Jump to year"></nav>
+    </div>
+  </header>
+
+  <main class="src-main" id="src-main"></main>
+
+  <footer class="src-footer">
+    <a href="index.html" class="back-link">← Back to the map</a>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/network.js"></script>
+  <script src="js/sources.js"></script>
+</body>
+</html>

@@ -1,0 +1,572 @@
+/* styles.css — European Rail Travel Times prototype */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --accent:       #4361ee;
+  --accent-light: #eef0fd;
+  --bg:           #ffffff;
+  --text:         #1a1a2e;
+  --text-muted:   #6b7280;
+  --border:       #f0f0f0;
+  --border-mid:   #e0e0e0;
+  --marker-base:  #8fa3b1;
+  --green:        #06d6a0;
+  --yellow:       #ffd166;
+  --red:          #ef476f;
+  --null-color:   #b0b8c4;
+  --header-h:     64px;
+  --panel-w:      340px;
+  --font:         'Inter', system-ui, -apple-system, sans-serif;
+  --radius:       4px;
+  --map-bg:       #e8ecf0;
+  --note-bg:      #f8f9ff;
+  --tooltip-bg:   #1a1a2e;
+  --tooltip-fg:   #ffffff;
+  --toggle-active:#ffffff;
+}
+
+/* ── DARK THEME (derived from the light palette; same accent) ───────────── */
+:root[data-theme="dark"] {
+  --accent-light: #232a52;
+  --bg:           #14161f;
+  --text:         #e6e8ef;
+  --text-muted:   #9aa0b0;
+  --border:       #262a36;
+  --border-mid:   #3a3f4e;
+  --null-color:   #5c6372;
+  --map-bg:       #1b1e27;
+  --note-bg:      #1c2140;
+  --tooltip-bg:   #e6e8ef;
+  --tooltip-fg:   #14161f;
+  --toggle-active:#2c3140;
+  color-scheme: dark;
+}
+
+html, body { height: 100%; overflow: hidden; }
+
+body {
+  font-family: var(--font);
+  font-size: 14px;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* ── HEADER ──────────────────────────────────────────────────────────────── */
+#header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--header-h);
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 24px;
+  z-index: 1000;
+}
+
+#header-title { flex: 1; min-width: 0; }
+
+#header-title h1 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#header-title p {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 1px;
+  white-space: nowrap;
+}
+
+/* Scenario selector */
+#scenario-selector {
+  display: flex;
+  gap: 2px;
+  background: var(--border);
+  border-radius: var(--radius);
+  padding: 2px;
+}
+
+.scenario-btn {
+  padding: 5px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font);
+  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  border-radius: calc(var(--radius) - 1px);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.scenario-btn:hover { color: var(--text); }
+
+.scenario-btn.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* View toggle */
+#view-toggle {
+  display: flex;
+  gap: 2px;
+  background: var(--border);
+  border-radius: var(--radius);
+  padding: 2px;
+}
+
+.view-btn {
+  padding: 5px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font);
+  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  border-radius: calc(var(--radius) - 1px);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.view-btn:hover { color: var(--text); }
+
+.view-btn.active {
+  background: var(--toggle-active);
+  color: var(--text);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Theme toggle (far right of header) */
+#theme-toggle {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  font-size: 16px;
+  line-height: 1;
+  background: var(--border);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+#theme-toggle:hover { background: var(--border-mid); }
+
+/* ── MAIN LAYOUT ─────────────────────────────────────────────────────────── */
+#main {
+  position: fixed;
+  top: var(--header-h);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+/* ── MAP ─────────────────────────────────────────────────────────────────── */
+#map-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  /* Explicit height so Leaflet always gets non-zero dimensions */
+  height: calc(100vh - var(--header-h));
+  min-height: 0;
+}
+
+#map {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── SIDE PANEL ──────────────────────────────────────────────────────────── */
+#side-panel {
+  width: var(--panel-w);
+  flex-shrink: 0;
+  border-left: 1px solid var(--border);
+  background: var(--bg);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#panel-content {
+  padding: 20px;
+  flex: 1;
+}
+
+/* Empty state */
+#panel-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 12px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#panel-empty .icon {
+  font-size: 40px;
+  opacity: 0.3;
+}
+
+#panel-empty p {
+  color: var(--text-muted);
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+/* Panel section headers */
+.panel-route-header {
+  margin-bottom: 18px;
+}
+
+.panel-route-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.panel-route-header .subtitle {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+
+/* Bar chart */
+#bar-chart-wrap {
+  margin-bottom: 20px;
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.bar-label-year {
+  width: 36px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.bar-label-year.active { color: var(--accent); }
+
+.bar-outer {
+  flex: 1;
+  height: 22px;
+  background: var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  position: relative;
+}
+
+.bar-inner {
+  height: 100%;
+  background: var(--border-mid);
+  border-radius: var(--radius);
+  transition: width 0.3s ease;
+  min-width: 4px;
+}
+
+.bar-inner.active { background: var(--accent); }
+
+.bar-null {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.bar-null span {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.bar-time {
+  width: 64px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.bar-time.active { color: var(--accent); }
+
+/* Route details */
+#route-details { margin-top: 0; }
+
+.detail-row {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.detail-row:last-child { border-bottom: none; }
+
+.detail-year {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 5px;
+}
+
+.detail-year.active { color: var(--accent); }
+
+.detail-via {
+  font-size: 13px;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.detail-transfers {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.detail-project {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 3px 8px;
+  border-radius: 20px;
+  margin-top: 4px;
+}
+
+.detail-project .arrow { font-size: 10px; }
+
+/* Key improvement note */
+#improvement-note {
+  margin-top: 16px;
+  padding: 12px;
+  background: var(--note-bg);
+  border-radius: var(--radius);
+  border-left: 3px solid var(--accent);
+}
+
+#improvement-note p {
+  font-size: 12px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* ── HEATMAP PANEL ────────────────────────────────────────────────────────── */
+#heatmap-list { margin-top: 4px; }
+
+.heatmap-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--border);
+  cursor: default;
+}
+
+.heatmap-row:last-child { border-bottom: none; }
+
+.heatmap-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.heatmap-city {
+  flex: 1;
+  font-size: 13px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.heatmap-time {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.heatmap-null {
+  font-size: 12px;
+  color: var(--null-color);
+  font-style: italic;
+}
+
+/* ── LEAFLET OVERRIDES ────────────────────────────────────────────────────── */
+.leaflet-container { background: var(--map-bg); }
+[data-theme="dark"] .leaflet-tile-pane { filter: none; }
+[data-theme="dark"] .leaflet-bar a { background: var(--bg); color: var(--text); border-color: var(--border-mid); }
+[data-theme="dark"] .leaflet-control-attribution { background: rgba(20,22,31,0.8); color: var(--text-muted); }
+[data-theme="dark"] .leaflet-control-attribution a { color: #8ea2ff; }
+
+.leaflet-tile-pane { filter: saturate(0.9) brightness(1.02); }
+
+.city-label {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  font-family: var(--font);
+  font-size: 11px;
+  font-weight: 600;
+  color: #1a1a2e;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.9);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* Tooltip */
+.leaflet-tooltip {
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--tooltip-bg);
+  color: var(--tooltip-fg);
+  border: none;
+  border-radius: var(--radius);
+  padding: 4px 10px;
+  box-shadow: none;
+}
+
+.leaflet-tooltip::before { display: none; }
+
+/* ── SCROLLBAR ────────────────────────────────────────────────────────────── */
+#side-panel::-webkit-scrollbar { width: 4px; }
+#side-panel::-webkit-scrollbar-thumb { background: var(--border-mid); border-radius: 2px; }
+
+/* ── RESPONSIVE ──────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  :root { --panel-w: 280px; }
+  #header-title p { display: none; }
+}
+
+@media (max-width: 640px) {
+  :root { --panel-w: 100%; --header-h: 56px; }
+  #main { flex-direction: column; }
+  #map-container { flex: 1; min-height: 0; }
+  #side-panel {
+    width: 100%;
+    height: 280px;
+    border-left: none;
+    border-top: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+}
+
+/* ── SETTINGS (top of side panel) ─────────────────────────────────────────── */
+#settings {
+  position: sticky; top: 0; z-index: 5;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 20px 10px;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.setting { display: flex; flex-direction: column; gap: 5px; }
+.setting label, .setting-label { font-size: 12px; color: var(--text-muted); display: flex; justify-content: space-between; }
+.setting label strong { color: var(--accent); }
+#transfer-slider { width: 100%; accent-color: var(--accent); }
+.seg { display: flex; gap: 2px; background: var(--border); border-radius: var(--radius); padding: 2px; }
+.seg-btn {
+  flex: 1; padding: 4px 8px; font: 500 12px var(--font); color: var(--text-muted);
+  background: transparent; border: none; border-radius: calc(var(--radius) - 1px); cursor: pointer;
+}
+.seg-btn.active { background: var(--accent); color: #fff; }
+.setting-note { font-size: 11px; color: var(--text-muted); }
+
+/* ── PANEL SECTIONS ──────────────────────────────────────────────────────── */
+.panel-h3 {
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--text-muted); margin: 20px 0 8px;
+}
+#panel-content a { color: var(--accent); text-decoration: none; }
+#panel-content a:hover { text-decoration: underline; }
+.legend { font-size: 11px; color: var(--text-muted); line-height: 1.45; margin: 6px 0 10px; }
+.muted-italic { color: var(--null-color); font-style: italic; }
+
+/* Legs */
+.legs { border: 1px solid var(--border); border-radius: var(--radius); padding: 4px 10px; }
+.leg { display: grid; grid-template-columns: 16px 1fr auto; gap: 2px 6px; padding: 7px 0; align-items: baseline; }
+.leg-name { font-size: 13px; font-weight: 500; }
+.leg-time { font-size: 13px; font-weight: 600; }
+.leg-note { grid-column: 2 / 4; font-size: 11px; color: var(--text-muted); }
+.leg-conf { font-size: 12px; font-weight: 700; text-align: center; cursor: help; }
+.conf-h { color: var(--green); }
+.conf-m { color: #d4a017; }
+.conf-l { color: var(--red); }
+.conf-plan { color: var(--accent); }
+.leg-change { font-size: 11px; color: var(--text-muted); padding: 3px 0 3px 22px; border-top: 1px dashed var(--border-mid); border-bottom: 1px dashed var(--border-mid); }
+
+/* Flight comparison */
+.flight-card { margin: 14px 0 4px; padding: 10px 12px; border: 1px solid var(--border); border-radius: var(--radius); }
+.flight-head { font-size: 13px; margin-bottom: 4px; }
+.flight-card p { font-size: 12px; color: var(--text-muted); }
+.flight-disclose { font-size: 11px !important; line-height: 1.45; margin-top: 6px; }
+.verdict { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
+.verdict.good { background: rgba(6, 214, 160, 0.15); color: #05a57c; }
+.verdict.bad { background: rgba(239, 71, 111, 0.12); color: #d63a5e; }
+
+/* Project cards */
+.project-card { padding: 10px 12px; background: var(--note-bg); border-left: 3px solid var(--accent); border-radius: var(--radius); margin-bottom: 8px; }
+.project-title { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+.project-year { font-size: 11px; font-weight: 500; color: var(--text-muted); margin-left: 4px; }
+.project-desc { font-size: 12px; line-height: 1.45; margin-bottom: 4px; }
+.project-status { font-size: 11px; color: var(--text-muted); line-height: 1.45; }
+.detail-project a { color: var(--accent) !important; }
+
+/* Heatmap legend */
+.heat-legend { display: grid; grid-template-columns: 1fr 1fr 1fr auto; font-size: 10px; color: var(--text-muted); margin: 0 0 10px; row-gap: 3px; }
+.heat-bar { grid-column: 1 / 4; height: 8px; border-radius: 4px; background: linear-gradient(90deg, #06d6a0 0%, #ffd166 40%, #ef476f 100%); }
+.heat-legend span:nth-child(2) { grid-column: 1; grid-row: 2; }
+.heat-legend span:nth-child(3) { grid-column: 2; grid-row: 2; text-align: center; }
+.heat-legend span:nth-child(4) { grid-column: 3; grid-row: 2; text-align: right; }
+.heat-null { grid-column: 4; grid-row: 1 / 3; padding-left: 10px; align-self: center; }
+.heat-null::before { content: ''; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #b0b8c4; margin-right: 4px; }
+
+#sources-link { color: var(--accent); font-weight: 600; text-decoration: none; }
+#sources-link:hover { text-decoration: underline; }
+
+/* ── New panel cards: CO₂, night trains, export ──────────────────────────── */
+#settings { position: static; }
+#settings input[type="search"], #settings select {
+  width: 100%; padding: 6px 8px; font: 13px var(--font); color: var(--text);
+  background: var(--bg); border: 1px solid var(--border-mid); border-radius: var(--radius);
+}
+.link-btn { background: none; border: none; padding: 0; margin-top: 4px; font: 600 11px var(--font); color: var(--accent); cursor: pointer; display: block; }
+.link-btn:hover { text-decoration: underline; }
+.route-title-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.icon-btn { flex-shrink: 0; font: 600 11px var(--font); color: var(--accent); background: var(--accent-light); border: none; border-radius: var(--radius); padding: 4px 8px; cursor: pointer; }
+.co2-card, .night-card { margin: 10px 0 4px; padding: 10px 12px; border: 1px solid var(--border); border-radius: var(--radius); }
+.co2-row { display: grid; grid-template-columns: 62px 1fr 52px; align-items: center; gap: 8px; margin: 6px 0; font-size: 12px; }
+.co2-track { height: 10px; background: var(--border); border-radius: 5px; overflow: hidden; }
+.co2-bar { height: 100%; border-radius: 5px; }
+.co2-bar.rail { background: var(--green); }
+.co2-bar.air { background: var(--red); }
+.co2-val { text-align: right; font-weight: 600; }
+.night-row { padding: 6px 0; border-bottom: 1px solid var(--border); }
+.night-row:last-of-type { border-bottom: none; }
+.night-top { display: flex; justify-content: space-between; font-size: 12.5px; }
+.night-meta { font-size: 11px; color: var(--text-muted); }
+#map.dim-tiles .leaflet-tile-pane { filter: brightness(0.62) saturate(0.9) contrast(1.05); }
+@media (max-width: 900px) {
+  #header-title p { display: block !important; }
+  #header-title .hint { display: none; }
+}
+.city-note { font-size: 12px; line-height: 1.45; padding: 8px 10px; margin: 8px 0; background: var(--note-bg); border-left: 3px solid var(--yellow); border-radius: var(--radius); }

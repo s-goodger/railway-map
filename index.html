@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>European Rail Travel Times: Now vs Future</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- App styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ── HEADER ─────────────────────────────────────────────────────────── -->
+  <header id="header">
+    <div id="header-title">
+      <h1>European Rail Travel Times: Now vs Future</h1>
+      <p><span class="hint">Click two cities to compare, or one for heatmap view · </span><a href="sources.html" id="sources-link">Sources &amp; projects</a></p>
+    </div>
+
+    <div id="scenario-selector" role="group" aria-label="Scenario year">
+      <button class="scenario-btn active" data-year="2026">2026</button>
+      <button class="scenario-btn"        data-year="2030">2030</button>
+      <button class="scenario-btn"        data-year="2035">2035</button>
+      <button class="scenario-btn"        data-year="2040">2040</button>
+    </div>
+
+    <div id="view-toggle" role="group" aria-label="View mode">
+      <button class="view-btn active" data-mode="comparison">Route Comparison</button>
+      <button class="view-btn"        data-mode="heatmap">Isochrone Heatmap</button>
+    </div>
+
+    <button id="theme-toggle" type="button" aria-label="Switch to dark mode">🌙</button>
+  </header>
+
+  <!-- ── MAIN ───────────────────────────────────────────────────────────── -->
+  <div id="main">
+    <div id="map-container">
+      <div id="map"></div>
+    </div>
+
+    <aside id="side-panel" aria-label="Travel time details">
+      <div id="settings">
+        <div class="setting">
+          <label for="city-search">Find a city</label>
+          <input type="search" id="city-search" list="city-list" placeholder="Type a city name…" autocomplete="off">
+          <datalist id="city-list"></datalist>
+        </div>
+        <div class="setting">
+          <label for="transfer-slider">Time per change <strong id="transfer-value">10 min</strong></label>
+          <input type="range" id="transfer-slider" min="10" max="60" step="5" value="10">
+        </div>
+        <div class="setting">
+          <span class="setting-label">Project opening dates</span>
+          <div id="timing-toggle" class="seg" role="group" aria-label="Project timing">
+            <button class="seg-btn active" data-timing="official">Official</button>
+            <button class="seg-btn" data-timing="conservative">Conservative (+4 yrs)</button>
+          </div>
+        </div>
+        <div class="setting">
+          <label for="basemap-select">Map style</label>
+          <select id="basemap-select"></select>
+        </div>
+        <p class="setting-note">Fastest scheduled train on every leg (timetables checked Oct 2026).
+          <button type="button" id="export-csv" class="link-btn">Download all journey times (CSV)</button></p>
+      </div>
+      <div id="panel-content"></div>
+    </aside>
+  </div>
+
+  <!-- ── SCRIPTS ────────────────────────────────────────────────────────── -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <!-- Data must load first -->
+  <script src="js/data.js"></script>
+  <script src="js/network.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/comparison.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

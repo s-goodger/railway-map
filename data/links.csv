@@ -1,0 +1,279 @@
+from,to,fastest_minutes,confidence,note,source
+Paris,London,139,high,"Eurostar 9055, 2h19",https://www.kombo.co/fr/horaires-train-Paris-Londres
+Paris,Brussels,82,high,"Eurostar, 1h22",https://www.kombo.co/fr/horaires-train-Paris-Bruxelles
+Paris,Amsterdam,205,high,"Eurostar 9415, 3h25",https://www.kombo.co/fr/horaires-train-Paris-Amsterdam
+Paris,Barcelona,406,high,"TGV 9708, 6h46",https://www.kombo.co/fr/horaires-train-Barcelone-Paris
+Paris,Lyon,113,high,"TGV inOui / Frecciarossa, 1h53",https://www.kombo.co/fr/horaires-train-Paris-Lyon
+Paris,Marseille,183,high,"TGV inOui non-stop, 3h03",https://www.sncf-connect.com/de-de/bahn/abfahrtszeiten/paris/marseille
+Paris,Bordeaux,122,high,"Ouigo, 2h02",https://www.sncf-connect.com/de-de/bahn/abfahrtszeiten/paris/bordeaux
+Paris,Montpellier,192,high,"TGV to Montpellier Sud de France, 3h12",https://www.sncf-connect.com/de-de/bahn/abfahrtszeiten/paris/montpellier
+Paris,Zurich,243,high,"TGV Lyria, 4h03",https://www.kombo.co/fr/horaires-train-Paris-Zurich
+Paris,Basel,179,high,"TGV Lyria 9215, 2h59",https://www.kombo.co/fr/horaires-train-Paris-Bale
+Paris,Geneva,197,high,"TGV Lyria, 3h17",https://www.kombo.co/fr/horaires-train-Paris-Geneve
+Paris,Frankfurt,229,medium,"ICE 9591, 3h49",https://www.kombo.co/fr/horaires-train-Paris-Francfort
+Paris,Stuttgart,189,high,"TGV 9577, 3h09",https://www.kombo.co/fr/horaires-train-Paris-Stuttgart
+Paris,Munich,346,medium,"TGV 9577 (one a day), 5h46",https://www.kombo.co/fr/horaires-train-Paris-Munich
+Paris,Berlin,458,high,"ICE 9590 (one a day), 7h38",https://www.kombo.co/de/zug-fahrplan-Berlin-Paris
+Paris,Cologne,200,medium,"Eurostar, 3h20",https://www.kombo.co/fr/horaires-train-Paris-Cologne
+Paris,Turin,329,high,"TGV 9253 to Porta Susa, 5h29",https://www.kombo.co/fr/horaires-train-Paris-Turin
+Paris,Milan,397,high,"Frecciarossa 9281, 6h37",https://www.kombo.co/fr/horaires-train-Paris-Milan
+London,Brussels,112,medium,"Eurostar, 1h52",https://www.kombo.co/fr/horaires-train-Bruxelles-Londres
+London,Amsterdam,238,medium,"Eurostar direct, 3h58",https://everyrail.com/trains/london-to-amsterdam/
+Brussels,Amsterdam,116,high,"Eurostar, 1h56",https://www.kombo.co/fr/horaires-train-Amsterdam-Bruxelles
+Brussels,Cologne,101,high,"ICE, 1h41",https://www.kombo.co/fr/horaires-train-Bruxelles-Cologne
+Brussels,Frankfurt,173,medium,"ICE, 2h53",https://www.kombo.co/fr/horaires-train-Bruxelles-Francfort
+Amsterdam,Cologne,151,medium,"ICE, 2h31",https://www.kombo.co/de/zug-fahrplan-Amsterdam-Koln
+Amsterdam,Frankfurt,227,medium,"ICE, 3h47",https://www.kombo.co/de/zug-fahrplan-Amsterdam-Frankfurt
+Amsterdam,Berlin,398,high,"IC/ICE direct, 6h38",https://www.kombo.co/de/zug-fahrplan-Amsterdam-Berlin
+Amsterdam,Osnabrück,168,medium,"IC, 2h48",https://www.kombo.co/de/zug-fahrplan-Amsterdam-Osnabruck
+Lille,Paris,62,medium,"TGV, 1h02",https://www.kombo.co/fr/horaires-train-Lille-Paris
+Lille,London,81,high,"Eurostar, 1h21",https://www.kombo.co/fr/horaires-train-Londres-Lille
+Lille,Brussels,34,high,"TGV, 34 min",https://www.sncf-connect.com/de-de/bahn/abfahrtszeiten/paris/brussel
+Lille,Lyon,178,high,"TGV, 2h58",https://www.kombo.co/fr/horaires-train-Lille-Lyon
+Lille,Marseille,275,medium,"TGV, 4h35",https://www.kombo.co/fr/horaires-train-Lille-Marseille
+Lille,Bordeaux,273,medium,"TGV (2 a day), 4h33",https://www.kombo.co/fr/horaires-train-Lille-Bordeaux
+Lille,Strasbourg,174,high,"TGV 9874, 2h54",https://www.kombo.co/fr/horaires-train-Lille-Strasbourg
+Strasbourg,Paris,103,high,"TGV/ICE, 1h43",https://www.kombo.co/fr/horaires-train-Strasbourg-Paris
+Strasbourg,Frankfurt,107,medium,"ICE 9591, 1h47",https://www.kombo.co/fr/horaires-train-Strasbourg-Francfort
+Strasbourg,Stuttgart,78,high,"TGV 9577, 1h18",https://www.kombo.co/fr/horaires-train-Strasbourg-Stuttgart
+Strasbourg,Munich,235,medium,"TGV 9577, 3h55",https://www.kombo.co/fr/horaires-train-Strasbourg-Munich
+Strasbourg,Basel,77,medium,"TER, 1h17",https://www.kombo.co/fr/horaires-train-Strasbourg-Bale
+Strasbourg,Luxembourg,95,high,"TGV 9896 (2 a day), 1h35",https://www.kombo.co/fr/horaires-train-Strasbourg-Luxembourg
+Strasbourg,Lyon,214,high,"TGV, 3h34",https://www.kombo.co/fr/horaires-train-Strasbourg-Lyon
+Strasbourg,Marseille,331,medium,"TGV, 5h31",https://www.kombo.co/fr/horaires-train-Strasbourg-Marseille
+Luxembourg,Paris,129,high,"TGV, 2h09",https://www.kombo.co/fr/horaires-train-Luxembourg-Paris
+Luxembourg,Brussels,192,medium,"SNCB IC, 3h12 (engineering works)",https://www.kombo.co/fr/horaires-train-Luxembourg-Bruxelles
+Luxembourg,Cologne,210,low,"No direct train: ~3h30 including a change at Trier/Koblenz",https://en.paperjam.lu/article/regular-direct-train-to-cologn
+London,Manchester,119,medium,"Avanti from Euston, 1h59",https://www.trainline.com/train-times/london-euston-to-manchester-piccadilly
+Madrid,Barcelona,182,medium,"Iryo, 3h02: 2026 speed limits after the Adamuz accident (2h30 before)",https://www.kombo.co/es/horarios-tren-Madrid-Barcelona
+Madrid,Marseille,494,medium,"Renfe AVE (one a day), 8h14",https://www.kombo.co/es/horarios-tren-Madrid-Marsella
+Madrid,Hendaye/Irun,342,medium,"Alvia to Irun, 5h42",https://www.kombo.co/es/horarios-tren-Madrid-Irun
+Bordeaux,Hendaye/Irun,145,medium,"TGV inOui, 2h25",https://www.kombo.co/fr/horaires-train-Bordeaux-Hendaye
+Bordeaux,Montpellier,282,medium,"Intercités via Toulouse, 4h42",https://www.kombo.co/fr/horaires-train-Bordeaux-Montpellier
+Barcelona,Montpellier,186,medium,"AVE / TGV, 3h06",https://www.kombo.co/es/horarios-tren-Barcelona-Montpellier
+Barcelona,Lyon,306,medium,"Renfe AVE (one a day), 5h06",https://www.kombo.co/es/horarios-tren-Barcelona-Lyon
+Barcelona,Marseille,278,medium,"Renfe AVE (one a day), 4h38",https://www.kombo.co/es/horarios-tren-Barcelona-Marsella
+Lyon,Marseille,99,medium,"TGV, 1h39",https://www.kombo.co/fr/horaires-train-Lyon-Marseille
+Lyon,Montpellier,95,medium,"TGV, 1h35",https://www.kombo.co/fr/horaires-train-Lyon-Montpellier
+Marseille,Montpellier,85,medium,"TGV, 1h25",https://www.kombo.co/fr/horaires-train-Marseille-Montpellier
+Lyon,Geneva,110,medium,"TER/TGV, 1h50",https://www.kombo.co/fr/horaires-train-Lyon-Geneve
+Lyon,Turin,229,medium,"Frecciarossa 9281, 3h49",https://www.kombo.co/fr/horaires-train-Lyon-Turin
+Lyon,Milan,276,medium,"Frecciarossa 9281, 4h36",https://www.kombo.co/fr/horaires-train-Lyon-Milan
+Madrid,Valencia,114,medium,"AVE/Iryo/Ouigo, 1h54 (2026 speed limits)",https://www.kombo.co/es/horarios-tren-Madrid-Valencia
+Barcelona,Valencia,167,medium,"Euromed, 2h47",https://www.kombo.co/es/horarios-tren-Barcelona-Valencia
+Madrid,Bilbao,310,medium,"Alvia, 5h10",https://www.kombo.co/es/horarios-tren-Madrid-Bilbao
+Barcelona,Bilbao,423,medium,"Alvia (one a day), 7h03",https://www.kombo.co/es/horarios-tren-Barcelona-Bilbao
+Bilbao,San Sebastián,155,low,"Euskotren E1, ~2h35",https://everyrail.com/spain/euskotren/
+San Sebastián,Hendaye/Irun,35,low,"Euskotren E2, ~35 min",https://everyrail.com/spain/euskotren/
+Lisbon,Entroncamento,62,high,"Alfa/IC leg of the 3h44 Lisbon–Badajoz CP itinerary",https://www.cp.pt/info/documents/d/cp/comboios-regionais-linha-leste-badajoz
+Entroncamento,Badajoz,152,high,"Regional leg of the Lisbon–Badajoz itinerary",https://www.cp.pt/info/documents/d/cp/comboios-regionais-linha-leste-badajoz
+Badajoz,Madrid,257,medium,"Alvia, 4h17",https://www.kombo.co/es/horarios-tren-Badajoz-Madrid
+Lisbon,Porto,159,medium,"Alfa Pendular from Oriente, 2h39",https://everyrail.com/trains/lisbon-to-porto/
+Porto,Vigo,210,medium,"Celta, 3h30",https://www.kombo.co/es/horarios-tren-Oporto-Vigo
+Vigo,Madrid,235,medium,"AVE, 3h55",https://www.kombo.co/es/horarios-tren-Vigo-Madrid
+Osnabrück,Hamburg,109,high,"ICE, 1h49",https://www.bahn.de/reisen/view/verbindung/hamburg/osnabrueck.shtml
+Geneva,Zurich,173,high,"IC1, 2h53",https://transport.opendata.ch
+Zurich,Basel,52,high,"IC3, 52 min",https://transport.opendata.ch
+Zurich,Munich,212,high,"EC, 3h32",https://fahrplan.oebb.at
+Zurich,Frankfurt,238,high,"EC 151, 3h58",https://fahrplan.oebb.at
+Zurich,Stuttgart,175,high,"IC, 2h55",https://www.bahn.de/reisen/view/verbindung/stuttgart/zuerich.shtml
+Zurich,Vienna,472,high,"Railjet, 7h52 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Zurich,Innsbruck,217,high,"Railjet, 3h37",https://fahrplan.oebb.at
+Basel,Frankfurt,170,high,"EC/ICE, 2h50",https://fahrplan.oebb.at
+Innsbruck,Munich,112,high,"Railjet, 1h52",https://fahrplan.oebb.at
+Innsbruck,Vienna,255,high,"Railjet, 4h15 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Frankfurt,Cologne,65,high,"ICE, 1h05",https://www.bahn.de/reisen/view/verbindung/frankfurt/koeln.shtml
+Frankfurt,Stuttgart,77,high,"ICE, 1h17",https://www.bahn.de/reisen/view/verbindung/stuttgart/frankfurt.shtml
+Frankfurt,Munich,189,high,"ICE, 3h09 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Frankfurt,Nuremberg,121,high,"ICE, 2h01",https://fahrplan.oebb.at
+Frankfurt,Berlin,224,high,"ICE, 3h44 (usually 4h01)",https://fahrplan.oebb.at
+Frankfurt,Hamburg,213,high,"ICE, 3h33",https://www.bahn.de/reisen/view/verbindung/hamburg/frankfurt.shtml
+Stuttgart,Munich,113,high,"ICE, 1h53",https://www.bahn.de/reisen/view/verbindung/muenchen/stuttgart.shtml
+Nuremberg,Munich,63,high,"ICE, 1h03 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Nuremberg,Berlin,163,high,"ICE, 2h43",https://www.bahn.de/reisen/view/verbindung/berlin/nuernberg.shtml
+Nuremberg,Vienna,252,high,"New direct ICE, 4h12 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Cologne,Berlin,332,high,"ICE, 5h32",https://fahrplan.oebb.at
+Cologne,Hamburg,215,high,"ICE, 3h35",https://www.bahn.de/reisen/view/verbindung/koeln/hamburg.shtml
+Cologne,Munich,250,high,"ICE, 4h10",https://fahrplan.oebb.at
+Berlin,Hamburg,107,high,"ICE, 1h47 (line reopened June 2026)",https://www.bahn.de/reisen/view/verbindung/berlin/hamburg.shtml
+Berlin,Munich,233,high,"ICE Sprinter, 3h53 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Berlin,Warsaw,309,high,"EC Berlin–Warszawa Express, 5h09 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Berlin,Prague,237,high,"Railjet/EC, 3h57",https://fahrplan.oebb.at
+Berlin,Vienna,501,high,"Railjet via Prague, 8h21",https://fahrplan.oebb.at
+Hamburg,Munich,322,high,"ICE, 5h22 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Hamburg,Prague,351,high,"Railjet/EC, 5h51",https://fahrplan.oebb.at
+Munich,Vienna,243,high,"Railjet, 4h03 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Munich,Prague,337,high,"Express via Plzeň, 5h37",https://fahrplan.oebb.at
+Munich,Budapest,433,high,"Railjet, 7h13",https://fahrplan.oebb.at
+Vienna,Budapest,167,high,"EC/Railjet to Keleti, 2h47",https://fahrplan.oebb.at
+Vienna,Prague,252,high,"Railjet, 4h12",https://fahrplan.oebb.at
+Vienna,Warsaw,449,high,"EC, 7h29 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Prague,Budapest,411,high,"Railjet/EC, 6h51",https://fahrplan.oebb.at
+Prague,Warsaw,504,high,"IC direct, 8h24",https://fahrplan.oebb.at
+Turin,Milan,45,medium,"Frecciarossa non-stop from Porta Susa, 45 min",https://www.thetrainline.com/en/train-times/torino-porta-susa-to-milano-centrale
+Turin,Rome,251,medium,"Frecciarossa, 4h11",https://www.thetrainline.com/en/train-times/torino-porta-susa-to-roma-termini
+Milan,Rome,170,high,"Frecciarossa non-stop, 2h50",https://www.trenitalia.com/it/frecciarossa/collegamenti-frecciarossa/viaggia-tra-roma-e-milano-con-frecciarossa.html
+Milan,Bologna,64,medium,"Frecciarossa, 1h04",https://www.thetrainline.com/en/train-times/milano-centrale-to-bologna-centrale
+Milan,Venice,149,medium,"Frecciarossa, 2h29",https://www.thetrainline.com/en/train-times/milano-centrale-to-venezia-santa-lucia
+Milan,Verona,70,medium,"Frecciarossa, 1h10",https://www.thetrainline.com/en/train-times/milano-centrale-to-verona-porta-nuova
+Bologna,Rome,123,medium,"Frecciarossa, 2h03",https://www.thetrainline.com/en/train-times/bologna-centrale-to-roma-termini
+Verona,Bologna,51,medium,"Frecciarossa, 51 min",https://www.thetrainline.com/en/train-times/verona-porta-nuova-to-bologna-centrale
+Verona,Rome,198,medium,"Frecciarossa, 3h18",https://www.thetrainline.com/en/train-times/verona-porta-nuova-to-roma-termini
+Venice,Rome,231,medium,"Frecciarossa, 3h51",https://www.thetrainline.com/en/train-times/venezia-santa-lucia-to-roma-termini
+Verona,Munich,333,medium,"ÖBB/DB EC via Brenner, 5h33",https://www.thetrainline.com/en/train-times/verona-porta-nuova-to-munchen-hbf
+Verona,Innsbruck,211,medium,"EC, 3h31",https://www.thetrainline.com/en/train-times/verona-porta-nuova-to-innsbruck-hbf
+Venice,Vienna,435,medium,"Railjet via Koralm line (opened Dec 2025), 7h15",https://www.vienna.at/new-oebb-timetable-this-changes-from-december/9674177
+Geneva,Milan,263,medium,"EC (3 a day), 4h23",https://www.thetrainline.com/en/train-times/geneve-to-milano-centrale
+Zurich,Milan,197,medium,"EC via Gotthard, 3h17",https://www.thetrainline.com/en/train-times/zurich-hb-to-milano-centrale
+Basel,Milan,265,medium,"EC, 4h25",https://www.thetrainline.com/en/train-times/basel-sbb-to-milano-centrale
+Bologna,Florence,37,medium,"Frecciarossa, 37 min",https://www.thetrainline.com/en/train-times/bologna-centrale-to-firenze-santa-maria-novella
+Bologna,Venice,93,medium,"Frecciarossa, 1h33",https://www.thetrainline.com/en/train-times/bologna-centrale-to-venezia-santa-lucia
+Bologna,Naples,211,medium,"Frecciarossa, 3h31",https://www.thetrainline.com/en/train-times/bologna-centrale-to-napoli-centrale
+Bologna,Bari,339,medium,"Frecciarossa (Adriatic), 5h39",https://www.thetrainline.com/en/train-times/bologna-centrale-to-bari-centrale
+Bologna,Turin,123,medium,"Frecciarossa, 2h03",https://www.thetrainline.com/en/train-times/bologna-centrale-to-torino-porta-susa
+Milan,Florence,114,medium,"Frecciarossa, 1h54",https://www.thetrainline.com/en/train-times/milano-centrale-to-firenze-santa-maria-novella
+Florence,Rome,90,medium,"Frecciarossa, 1h30",https://www.thetrainline.com/en/train-times/firenze-santa-maria-novella-to-roma-termini
+Florence,Naples,183,medium,"Frecciarossa, 3h03",https://www.thetrainline.com/en/train-times/firenze-santa-maria-novella-to-napoli-centrale
+Florence,Venice,134,medium,"Frecciarossa, 2h14",https://www.thetrainline.com/en/train-times/firenze-santa-maria-novella-to-venezia-santa-lucia
+Florence,Turin,174,medium,"Frecciarossa, 2h54",https://www.thetrainline.com/en/train-times/firenze-santa-maria-novella-to-torino-porta-susa
+Rome,Naples,73,medium,"Frecciarossa, 1h13",https://www.thetrainline.com/en/train-times/roma-termini-to-napoli-centrale
+Milan,Naples,273,medium,"Frecciarossa, 4h33",https://www.thetrainline.com/en/train-times/milano-centrale-to-napoli-centrale
+Rome,Bari,254,medium,"Frecciarossa, 4h14",https://www.thetrainline.com/en/train-times/roma-termini-to-bari-centrale
+Naples,Bari,214,medium,"Frecciarossa via Naples–Cancello link (from July 2026), 3h34",https://www.trenitalia.com/it/chi-siamo/comunicati-stampa/20260530-frecciarossa-diretto-lecce-napoli.html
+Milan,Bari,412,medium,"Frecciarossa, 6h52",https://www.thetrainline.com/en/train-times/milano-centrale-to-bari-centrale
+Berlin,Copenhagen,421,high,"ČD ComfortJet, 7h01",https://www.vagonweb.cz/razeni/vlak.php?zeme=CD&kategorie=rj&cislo=383&rok=2026
+Hamburg,Copenhagen,274,high,"DSB/DB via Jutland, 4h34",https://www.seat61.com/trains-and-routes/hamburg-to-copenhagen-by-train.htm
+Prague,Copenhagen,663,high,"ČD ComfortJet, 11h03",https://www.vagonweb.cz/razeni/vlak.php?zeme=CD&kategorie=rj&cislo=385&rok=2026
+Copenhagen,Gothenburg,210,high,"Öresundståg, 3h30",https://www.oresundstag.se
+Gothenburg,Oslo,206,high,"Vy RE20, 3h26",https://www.vy.no
+Stockholm,Gothenburg,203,medium,"SJ, 3h23 (track works; ~3h01 normally)",https://www.omio.se/tag/stockholm/goteborg
+Copenhagen,Stockholm,315,medium,"SJ X2000 ~5h15 when running (suspended to 13 Dec 2026; Snälltåget 6h03 meanwhile)",https://www.seat61.com/trains-and-routes/copenhagen-to-stockholm-by-train.htm
+Stockholm,Oslo,330,high,"SJ, 5h30",https://www.sj.se
+Warsaw,Mockava,286,medium,"PKP IC Hańcza to the border, 4h46",https://www.seat61.com/trains-and-routes/warsaw-to-vilnius-by-train.htm
+Mockava,Vilnius,137,medium,"LTG Link, 2h17",https://www.seat61.com/trains-and-routes/warsaw-to-vilnius-by-train.htm
+Vilnius,Riga,277,medium,"LTG Link, 4h37",https://www.seat61.com/trains-and-routes/vilnius-riga-tallinn-by-train.htm
+Riga,Valga,123,medium,"Vivi/Elron, 2h03",https://www.seat61.com/trains-and-routes/vilnius-riga-tallinn-by-train.htm
+Valga,Tallinn,207,medium,"Elron, 3h27",https://www.seat61.com/trains-and-routes/vilnius-riga-tallinn-by-train.htm
+Riga,Tallinn,348,medium,"Direct Elron Riga–Tallinn (since Jan 2026), 5h48",https://vivi.lv/en/news/267/regular-train-service-launched-on-the-tallinn-tartu-riga-route/
+Seville,Madrid,156,high,"AVE, 2h36 (line under renovation; ~2h21–2h30 before 2026)",https://www.thetrainline.com/en/train-times/seville-to-madrid
+Seville,Barcelona,377,medium,"AVE/Ouigo/Iryo direct, 6h17",https://www.thetrainline.com/en/train-times/barcelona-to-seville
+Seville,Valencia,262,high,"AVE direct, 4h22",https://www.thetrainline.com/en/train-times/seville-to-valencia
+Toulouse,Paris,275,medium,"TGV inOui to Montparnasse, 4h35",https://www.sncf-connect.com/train/trajet/toulouse/paris
+Toulouse,Bordeaux,140,medium,"TGV/Intercités, 2h20",https://www.sncf-connect.com/train/trajet/bordeaux/toulouse
+Toulouse,Montpellier,130,high,"TGV/Intercités, 2h10",https://www.sncf-connect.com/train/trajet/toulouse/montpellier
+Toulouse,Marseille,234,high,"Intercités, 3h54",https://www.sncf-connect.com/train/trajet/toulouse/marseille
+Toulouse,Lyon,235,high,"TGV inOui, 3h55",https://www.sncf-connect.com/train/trajet/toulouse/lyon
+Edinburgh,London,249,medium,"LNER to King's Cross, 4h09 (Dec 2025 timetable)",https://www.thetrainline.com/en/train-times/edinburgh-to-london
+Edinburgh,Manchester,189,medium,"TransPennine Express, 3h09",https://www.thetrainline.com/en/train-times/edinburgh-to-manchester-piccadilly
+Edinburgh,Birmingham,246,medium,"Avanti/CrossCountry, 4h06",https://www.thetrainline.com/en/train-times/edinburgh-to-birmingham
+Birmingham,London,79,medium,"Avanti to Euston, 1h19",https://www.thetrainline.com/en/train-times/birmingham-to-london-euston
+Birmingham,Manchester,87,high,"Avanti/CrossCountry, 1h27",https://www.thetrainline.com/en/train-times/birmingham-new-street-to-manchester-piccadilly
+Bratislava,Vienna,47,high,"New non-stop RJX/EC via Marchegg, 47 min (Dec 2026 timetable)",https://fahrplan.oebb.at
+Bratislava,Budapest,143,high,"Railjet to Keleti, 2h23",https://fahrplan.oebb.at
+Bratislava,Prague,265,high,"EC/Railjet, 4h25",https://fahrplan.oebb.at
+Bratislava,Brno,100,high,"RegioJet, 1h40",https://fahrplan.oebb.at
+Bratislava,Warsaw,493,medium,"IC 131, 8h13 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Bratislava,Berlin,510,medium,"New daytime Railjet, 8h30 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Brno,Prague,156,high,"ČD Railjet, 2h36",https://fahrplan.oebb.at
+Brno,Vienna,90,high,"RegioJet/ČD Railjet, 1h30",https://fahrplan.oebb.at
+Brno,Budapest,250,high,"Railjet, 4h10",https://fahrplan.oebb.at
+Brno,Berlin,402,high,"Railjet, 6h42 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Ljubljana,Zagreb,135,high,"IR/EC, 2h15",https://potniski.sz.si/en/zagreb/
+Ljubljana,Vienna,360,high,"EC Emona via Graz, 6h00",https://potniski.sz.si/en/vienna/
+Ljubljana,Munich,375,medium,"EC, 6h15",https://potniski.sz.si/en/international-travel/germany-d/munich/
+Ljubljana,Budapest,464,medium,"MÁV via Hodoš, 7h44",https://potniski.sz.si/en/budapest/
+Ljubljana,Graz,190,high,"IR, 3h10",https://fahrplan.oebb.at
+Ljubljana,Villach,91,high,"SŽ IR via Karawanken tunnel, 1h31",https://fahrplan.oebb.at
+Zagreb,Budapest,354,medium,"IC, 5h54 (one a day)",https://hzpp.hr/en/international/hungary
+Zagreb,Vienna,387,high,"EC via Maribor/Graz, 6h27",https://hzpp.hr/en/international/vienna
+Zagreb,Munich,534,medium,"EC, 8h54 (Dec 2026 timetable)",https://hzpp.hr/en/international/germany
+Zagreb,Graz,232,high,"EC, 3h52",https://fahrplan.oebb.at
+Zagreb,Villach,251,medium,"IR via Ljubljana, 4h11",https://fahrplan.oebb.at
+Vienna,Graz,146,high,"Railjet, 2h26",https://fahrplan.oebb.at
+Graz,Villach,65,high,"Railjet via Koralm line, 1h05",https://fahrplan.oebb.at
+Villach,Munich,252,high,"EC/ICE via Salzburg, 4h12",https://fahrplan.oebb.at
+Villach,Venice,202,high,"Railjet, 3h22",https://fahrplan.oebb.at
+Warsaw,Łódź,65,high,"IC to Łódź Fabryczna, 1h05",https://fahrplan.oebb.at
+Warsaw,Poznań,136,high,"EIP, 2h16",https://www.intercity.pl/pl/site/o-nas/dzial-prasowy/aktualnosci/nowosci-w-rocznym-rozkladzie-jazdy-pkp-intercity-dla-wojewodztwa-wielkopolskiego.html
+Warsaw,Wrocław,207,high,"EIC, 3h27 (Dec 2026 timetable)",https://www.intercity.pl/pl/site/o-nas/dzial-prasowy/aktualnosci/pkp-intercity:-nowy-rozklad-jazdy-2026/2027-dla-wojewodztwa-dolnoslaskiego.html
+Łódź,Poznań,160,medium,"IC from Łódź Kaliska, 2h40",https://fahrplan.oebb.at
+Łódź,Wrocław,178,medium,"IC from Łódź Widzew, 2h58",https://fahrplan.oebb.at
+Poznań,Wrocław,76,high,"IC, 1h16",https://fahrplan.oebb.at
+Poznań,Berlin,152,high,"EC to Berlin Hbf, 2h32 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Wrocław,Berlin,235,high,"EC to Berlin Hbf, 3h55 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Wrocław,Prague,236,high,"IC/EC via Kłodzko, 3h56",https://fahrplan.oebb.at
+Wrocław,Vienna,311,high,"EC via Ostrava, 5h11",https://fahrplan.oebb.at
+Poznań,Prague,340,high,"EC Baltic Express, 5h40",https://fahrplan.oebb.at
+Poznań,Vienna,392,high,"EC Danubius, 6h32",https://fahrplan.oebb.at
+Stuttgart,Cologne,136,high,"ICE, 2h16 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Stuttgart,Hamburg,306,high,"ICE, 5h06",https://fahrplan.oebb.at
+Stuttgart,Berlin,284,high,"ICE via Nuremberg–Erfurt, 4h44 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Stuttgart,Nuremberg,114,high,"ICE, 1h54 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Stuttgart,Leipzig,260,high,"ICE, 4h20 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Stuttgart,Basel,162,medium,"ICE (one a day), 2h42 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Stuttgart,Hanover,222,high,"ICE, 3h42",https://fahrplan.oebb.at
+Basel,Cologne,229,high,"ICE, 3h49 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Basel,Hamburg,403,high,"EC/ICE, 6h43 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Basel,Berlin,424,high,"ICE, 7h04 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Basel,Hanover,316,high,"ICE, 5h16 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Nuremberg,Hamburg,249,high,"ICE via Würzburg–Hanover, 4h09 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Nuremberg,Leipzig,117,high,"ICE, 1h57 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Nuremberg,Hanover,168,high,"ICE, 2h48 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Nuremberg,Cologne,202,medium,"ICE (evening), 3h22",https://fahrplan.oebb.at
+Dresden,Berlin,95,high,"Railjet, 1h35 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Dresden,Prague,135,high,"Railjet, 2h15 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Dresden,Leipzig,62,high,"ICE, 1h02 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Dresden,Hamburg,211,high,"Railjet via Berlin, 3h31 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Dresden,Frankfurt,263,high,"ICE, 4h23 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Dresden,Vienna,399,high,"Railjet via Prague, 6h39 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Leipzig,Berlin,73,high,"ICE, 1h13 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Leipzig,Munich,186,high,"ICE, 3h06 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Leipzig,Frankfurt,174,high,"ICE, 2h54 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Leipzig,Hamburg,191,high,"ICE, 3h11 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Leipzig,Cologne,345,medium,"ICE (few a day), 5h45",https://fahrplan.oebb.at
+Hanover,Hamburg,75,high,"ICE, 1h15 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Hanover,Berlin,166,high,"ICE diverted via Magdeburg, 2h46 (Hanover–Berlin line closed Oct 2026–Dec 2027; normally ~1h36)",https://www.infranken.de/deutschland/berlin-hannover-80-minuten-mehr-fahrzeit-bis-ende-2027-art-6394443
+Hanover,Frankfurt,135,high,"ICE, 2h15 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Hanover,Cologne,154,high,"ICE, 2h34 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Hanover,Munich,244,high,"ICE, 4h04 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Hanover,Amsterdam,243,medium,"IC/ICE via Osnabrück (2 a day), 4h03",https://fahrplan.oebb.at
+Hanover,Osnabrück,68,high,"ICE/IC, 1h08 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Antwerp,Brussels,33,high,"Eurostar (ex-Thalys), 33 min",https://fahrplan.oebb.at
+Antwerp,Amsterdam,80,high,"Eurostar (ex-Thalys), 1h20 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Antwerp,Rotterdam,32,high,"Eurostar (ex-Thalys), 32 min (Dec 2026 timetable)",https://fahrplan.oebb.at
+Antwerp,Paris,122,high,"Eurostar (ex-Thalys) to Paris Nord, 2h02 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Antwerp,London,161,medium,"New Eurostar London→Antwerp stop from 14 Dec 2026, 2h41 (London→Antwerp only)",https://traveltomorrow.com/eurostar-to-launch-new-direct-london-to-antwerp-service-from-december-2026/
+Antwerp,Cologne,143,medium,"ICE (1–2 a day), 2h23 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Rotterdam,Amsterdam,44,high,"Eurostar / NS Intercity Direct, 44 min",https://fahrplan.oebb.at
+Rotterdam,Brussels,68,high,"Eurostar (ex-Thalys), 1h08 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Rotterdam,Paris,157,high,"Eurostar (ex-Thalys) to Paris Nord, 2h37 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Rotterdam,London,196,medium,"Eurostar, 3h16",https://www.seat61.com/trains-and-routes/london-to-amsterdam-by-eurostar.htm
+Venice,Turin,217,high,"Frecciarossa, 3h37 (Dec 2026 timetable)",https://fahrplan.oebb.at
+Venice,Naples,322,high,"Frecciarossa, 5h22",https://fahrplan.oebb.at
+Verona,Venice,72,high,"Frecciarossa, 1h12",https://fahrplan.oebb.at
+Verona,Florence,91,high,"Frecciarossa, 1h31",https://fahrplan.oebb.at
+Verona,Turin,134,high,"Frecciarossa, 2h14",https://fahrplan.oebb.at
+Verona,Naples,281,medium,"Frecciarossa (one a day), 4h41",https://fahrplan.oebb.at
+Venice,Munich,412,high,"Railjet via Brenner (2 a day), 6h52",https://fahrplan.oebb.at
+Graz,Budapest,289,high,"IC via Szombathely (2 a day), 4h49",https://fahrplan.oebb.at
+Graz,Munich,338,high,"ICE/RJ via Koralm line and Salzburg, 5h38",https://fahrplan.oebb.at
+Graz,Venice,281,high,"Railjet via Koralm line, 4h41",https://fahrplan.oebb.at
+Graz,Innsbruck,350,high,"EC Transalpin via Selzthal, 5h50",https://fahrplan.oebb.at
+Nice,Marseille,147,high,"TER, 2h27 (TGV 2h34)",https://fahrplan.oebb.at
+Nice,Paris,342,high,"Ouigo, 5h42",https://fahrplan.oebb.at
+Nice,Lyon,271,high,"TGV (about 2 a day), 4h31",https://fahrplan.oebb.at
+Nice,Ventimiglia,40,low,"TER to Ventimiglia, ~40 min (Nice–Milan 5h04 with a change)",https://www.seat61.com/trains-and-routes/nice-to-italy-by-train.htm
+Ventimiglia,Milan,254,low,"Trenitalia IC Ventimiglia–Milan, ~4h14",https://www.seat61.com/trains-and-routes/nice-to-italy-by-train.htm
+Belgrade,Budapest,197,medium,"Planned direct SOKO trains on the new line from 13 Dec 2026, 3h17 (start has slipped several times; until then ~6h09 with two changes)",https://www.seat61.com/trains-and-routes/budapest-to-belgrade-by-train.htm
+Belgrade,Vienna,400,medium,"EC Avala via Budapest from Dec 2026, 6h40",https://www.oebb.at/de/neuigkeiten/fahrplan-2027
+Athens,Thessaloniki,312,medium,"Hellenic Train IC, 5h12 (reduced timetable during Thessaly reconstruction; ~4h15 before 2023)",https://fahrplan.oebb.at
+Sofia,Ruse,392,high,"BDŽ to Ruse, 6h32",https://www.seat61.com/international-trains/trains-from-Sofia.htm
+Ruse,Bucharest,161,high,"CFR Ruse–Bucharest, 2h41",https://www.seat61.com/international-trains/trains-from-Sofia.htm
+Bucharest,Budapest,897,high,"Overnight D 346 Dacia, 14h57 (fastest day train 16h21)",https://fahrplan.oebb.at
+Bucharest,Vienna,1073,medium,"Overnight D 346 Dacia, 17h53",https://www.seat61.com/international-trains/trains-from-Bucharest.htm
+Kaunas,Vilnius,59,high,"LTG Link non-stop express (since Mar 2026), 59 min",https://sumin.lrv.lt/en/news/from-vilnius-to-kaunas-without-stops-ltg-link-express-train-began-operating-on-march-29-aMfX
+Kaunas,Mockava,73,high,"LTG Link to the border, 1h13 (then PKP IC to Warsaw)",https://www.seat61.com/trains-and-routes/warsaw-to-vilnius-by-train.htm
+Helsinki,Oulu,318,low,"VR Pendolino/IC Helsinki–Oulu, ~5h18 (estimate)",https://www.vr.fi/en
+Oulu,Haparanda,100,high,"VR IC to Haparanda (since Aug 2026), 1h40",https://www.vr.fi/en/news/2026/06/25/sweden-soon-reachable-from-finland-by-train-traffic-to-haparanda-begins-in-august
+Haparanda,Boden,91,high,"Norrtåg regional, 1h31",https://www.seat61.com/international-trains/trains-from-Helsinki.htm
+Boden,Stockholm,972,medium,"SJ overnight sleeper, 16h12",https://www.seat61.com/international-trains/trains-from-Helsinki.htm
